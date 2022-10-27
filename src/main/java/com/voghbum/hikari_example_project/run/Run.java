@@ -37,13 +37,14 @@ public class Run implements CommandLineRunner {
         return employees;
     }
 
-/*    @Override
+/*  @Override
     public void run(String... args) throws Exception {
 
     }*/
 
     @Override
     public void run(String... args) throws Exception {
-        fetchData();
+        var x = fetchData();
+        x.forEach(System.out::println);
     }
 }

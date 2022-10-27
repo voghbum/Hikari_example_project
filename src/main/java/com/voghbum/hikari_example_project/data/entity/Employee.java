@@ -91,4 +91,15 @@ public class Employee {
     public void setDeptno(int deptno) {
         this.deptNo = (long) deptno;
     }
+
+    @Override
+    public String toString() {
+        return "Employee{" +
+                "empno=" + empno +
+                ", ename='" + ename + '\'' +
+                ", job='" + job + '\'' +
+                ", hireDate=" + hireDate +
+                ", sal=" + sal +
+                '}';
+    }
 }
